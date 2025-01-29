@@ -16,7 +16,7 @@ const Login = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-green-600 to-green-800 p-8">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#4A6A55] p-8">
       <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
         Welcome to Our Healthcare Portal
       </h1>

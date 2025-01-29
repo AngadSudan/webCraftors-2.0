@@ -1,21 +1,22 @@
 import React, { useState } from "react";
-
+import logo from "../assets/logo.jpg";
 function Header() {
   const navLinks = [
-    { name: "Business", href: "/business" },
     { name: "About", href: "/about" },
     { name: "Advice", href: "/advice" },
     { name: "FAQ", href: "/faq" },
     { name: "Reviews", href: "/reviews" },
     { name: "Contact", href: "/contact" },
   ];
-  const [isLoggedin, setLoggedin] = useState(false);
+  const [isLoggedin, setLoggedin] = useState(
+    localStorage.getItem("loggedIn") || false
+  );
 
   return (
     <div>
       <header className="navbar-bg w-full p-4 bg-[#4A6A55] flex justify-between items-center fixed top-0 left-0 z-50 shadow-md">
         <div className="flex items-center space-x-10">
-          <h1 className="text-xl font-semibold text-[#F1F1F1]">CareVerse</h1>
+          <img src={logo} className="w-[175px] " />
           <nav className="hidden md:flex space-x-4">
             {navLinks.map((link, index) => (
               <a

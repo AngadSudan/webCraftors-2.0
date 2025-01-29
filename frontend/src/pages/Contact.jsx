@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-br from-green-600 to-green-800 p-8 text-white">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-[#4A6A55] p-8 text-white">
       {/* Contact Info Section */}
       <div className="bg-white text-green-700 rounded-xl shadow-md p-8 max-w-lg w-full md:w-1/2 md:mr-8">
         <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">

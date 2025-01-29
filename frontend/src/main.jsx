@@ -19,16 +19,21 @@ import {
   SignupUser,
   SignupDoctor,
 } from "./pages/index.js";
-
+import FAQs from "./pages/Faqs.jsx";
+import Advice from "./pages/Advice.jsx";
+import Review from "./pages/Review.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<App />}>
-        <Route index path="/home" element={<Home />} />
+        <Route index path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
+        <Route path="faq" element={<FAQs />} />
+        <Route path="advice" element={<Advice />} />
+        <Route path="reviews" element={<Review />} />
       </Route>
       <Route path="login-doctor" element={<LoginDoctor />} />
       <Route path="login-user" element={<LoginUser />} />
